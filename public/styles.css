@@ -216,16 +216,20 @@
     display: inline-block;
     padding: 20px 50px;
     background-color: #ffcd01;
+    box-shadow: 0 0 20px #ffcd01;
+    outline: none;
     border-radius: 50px;
+    border-width: 0;
     font-size: 24px;
     font-weight: 700;
     color: #111;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.6s ease;
   }
   
   .cta:hover {
     background-color: #fff;
     color: #111;
+    transform: translateY(-5px);
   }
   
   /* Feature Styles */
