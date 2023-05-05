@@ -426,6 +426,12 @@
     .copy {
       font-size: 12px;
     }
+
+    .popup-content {
+      padding: 10px !important;
+      width: 90% !important;
+    }
+
   }
   
   @media (max-width: 576px) {
