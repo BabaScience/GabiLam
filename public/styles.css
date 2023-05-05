@@ -228,34 +228,81 @@
     color: #111;
   }
   
-  /* Features Section Styles */
-  .features {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .feature {
-    max-width: 400px;
-    margin: 0 20px;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .feature-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .feature-text {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 50px;
-  }
+  /* Feature Styles */
+.features {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  margin: 5% 20%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  /* margin-top: 60px; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100%);
+  /* max-width: 300px; */
+  /* margin-bottom: 40px;
+  margin-top: 40px; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature-text {
+  opacity: 0.6;
+  margin-bottom: 5%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.icon i {
+  color: #525252;
+}
+
+.text {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-title {
+  color:#525252;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
   
   /* Footer Styles */
   footer {
@@ -296,6 +343,10 @@
     .cta {
       padding: 15px 40px;
       font-size: 16px;
+    }
+
+    .features {
+      margin: 5% 10%;
     }
   
     .feature-title {
@@ -359,6 +410,8 @@
     .features {
       flex-direction: column;
       align-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 5% 20%;
     }
   
     .feature {
@@ -392,6 +445,10 @@
     .cta {
       padding: 10px 20px;
       font-size: 14px;
+    }
+
+    .features {
+      margin: 5% 10%;
     }
   
     .feature-title {
